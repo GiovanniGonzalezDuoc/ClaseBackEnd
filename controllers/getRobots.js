@@ -44,7 +44,7 @@ const getRobotsBySeries = ( req = request , res = response )=> {
     let robotS = "";
 
     robotS = robots.filter(( robot )=>{
-        return robot.id === series;
+        return robot.series === series;
     });
 
     if (robotS){
