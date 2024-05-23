@@ -56,7 +56,7 @@ const getRobotsBySeries = ( req = request , res = response )=> {
     }else{
         return res.json({
             ok:false,
-            msg:"No hay un robots con ese id",
+            msg:"No hay un robots con ese series",
             statusCode:404
         })
     }

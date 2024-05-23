@@ -10,9 +10,9 @@ const {getRobots , getRobotsById , getRobotsBySeries} = require("./controllers/g
 
 app.get("/", getRobots);
 
-app.get("/:id",getRobotsById);
+app.get("/id/:id",getRobotsById);
 
-app.get("/:series",getRobotsBySeries);
+app.get("/series/:series",getRobotsBySeries);
 
 app.listen(port,()=>{
     console.log(`Corriendo ok en el puerto: ${port}`);
